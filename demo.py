@@ -4,6 +4,7 @@ Spyder Editor
 
 This is a temporary script file.
 """
+pip install scikit-learn
 import streamlit as st
 from scikit-learn.tree import DecisionTreeRegressor
 st.write('machine learning')
