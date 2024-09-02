@@ -10,7 +10,7 @@ st.title('INPUT PREDICTION')
 
 import pandas as pd
 df=pd.read_csv('YIELD1.csv')
-#st.line_chart(df['YIELD'])
+
 x=df.iloc[:,[0,5]]
 y=df.iloc[:,[1,2,3]]
 model=DecisionTreeRegressor()
@@ -23,7 +23,7 @@ def user_input_features():
     return features
 df1=user_input_features()
 df=pd.read_csv('YIELD1.csv')
-##st.line_chart(df['YIELD'])
+
 x=df.iloc[:,[0,5]]
 y=df.iloc[:,[1,2,3]]
 model=DecisionTreeRegressor()
